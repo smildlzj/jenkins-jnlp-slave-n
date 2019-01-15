@@ -6,6 +6,6 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | /bin/bash - \
   && apt-get install -y nodejs \
   && apt-get clean \
   && npm install -g n yarn \
-  && chown jenkins:jenkins -R /home/jenkins/.npm
+  && chown jenkins:jenkins -R /home/jenkins/
 
 USER jenkins
